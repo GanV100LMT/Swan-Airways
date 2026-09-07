@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swan Airways Boeing 787-9 Dreamliner</title>
+
+    <link rel="stylesheet" href="../assets/css/detail.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= PREMIUM HEADER ================= -->
+
+    <header id="header">
+      <div class="container">
+        <a href="../pages/index.html" class="logo-link">
+          <img
+            src="../assets/images/logo-light.png"
+            alt="Swan Airways"
+            class="logo"
+          />
+        </a>
+
+        <nav class="nav-bar">
+          <a href="../pages/index.html">Home</a>
+          <a href="../pages/shop.html">Shop</a>
+          <a href="../pages/hotel.html">Hotel</a>
+
+          <a href="../pages/login.html">Login - Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= PRODUCT DETAIL ================= -->
+
+    <section class="product-detail">
+      <div class="product-detail-container">
+        <div class="product-image">
+          <img
+            id="product-image"
+            src="../assets/images/lego1.png"
+            alt="Swan Airways Boeing 787-9 Dreamliner"
+          />
+        </div>
+
+        <div class="product-info">
+          <h1 id="product-name">Swan Airways Boeing 787-9 Dreamliner</h1>
+
+          <p class="price" id="product-price">$38.00</p>
+
+          <p class="description" id="product-description">
+            Bring the Swan Airways experience home with this detailed Boeing
+            787-9 Dreamliner building set. Designed for aviation enthusiasts and
+            collectors, this model features the iconic Swan Airways livery and a
+            realistic aircraft design.
+          </p>
+
+          <p class="description" id="product-description-2">
+            Build, display, and enjoy your own Swan Airways aircraft. Perfect
+            for collectors, aviation fans, or anyone who loves airplanes.
+          </p>
+
+          <!-- PRODUCT SPECS -->
+
+          <div class="product-specs">
+            <p>
+              <strong>Brand:</strong>
+              <span id="product-brand">Swan Airways</span>
+            </p>
+
+            <p>
+              <strong>Model:</strong>
+              <span id="product-model"> Boeing 787-9 Dreamliner </span>
+            </p>
+
+            <p>
+              <strong>Type:</strong>
+              <span id="product-type"> Aircraft Building Set </span>
+            </p>
+
+            <p>
+              <strong>Pieces:</strong>
+              1,024 pieces
+            </p>
+
+            <p>
+              <strong>Recommended Age:</strong>
+              <span id="product-age">8+</span>
+            </p>
+          </div>
+
+          <!-- QUANTITY -->
+
+          <div class="quantity">
+            <label for="quantity"> Quantity </label>
+
+            <input type="number" id="quantity" value="1" min="1" />
+          </div>
+
+          <!-- ADD TO CART -->
+
+          <button type="button" class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="footer">
+      <img src="../assets/images/logo-light2.png" alt="Swan Airways" />
+
+      <p>
+        Your journey begins with us. Fly farther, explore more, and travel with
+        confidence.
+      </p>
+
+      <h3>CONTACT US</h3>
+
+      <p>
+        Email: support@swanairways.com
+        <br />
+        Phone: +84 07 6868 2702
+        <br />
+        Address: Ho Chi Minh City, Vietnam
+      </p>
+
+      <h3>GET THE LATEST TRAVEL UPDATES</h3>
+
+      <div class="input-group">
+        <label for="footer-email"> Email </label>
+
+        <input
+          type="email"
+          id="footer-email"
+          placeholder="Your E-mail Address..."
+        />
+      </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+      const products = {
+        boeing: {
+          image: "../assets/images/lego1.png",
+          name: "Swan Airways Boeing 787-9 Dreamliner",
+          price: "$38.00",
+          description:
+            "Bring the Swan Airways experience home with this detailed Boeing 787-9 Dreamliner building set. Designed for aviation enthusiasts and collectors, this model features the iconic Swan Airways livery and a realistic aircraft design.",
+          description2:
+            "Build, display, and enjoy your own Swan Airways aircraft. Perfect for collectors, aviation fans, or anyone who loves airplanes.",
+          brand: "Swan Airways",
+          type: "Aircraft Building Set",
+          model: "Boeing 787-9 Dreamliner",
+          age: "8+",
+        },
+
+        "airport-set": {
+          image: "../assets/images/lego2.png",
+          name: "Swan Airways Airport Complete Set",
+          price: "$199.00",
+          description:
+            "Create your own Swan Airways airport with this complete airport building set.",
+          description2:
+            "Perfect for aviation fans, collectors, and anyone who enjoys building detailed airport scenes.",
+          brand: "Swan Airways",
+          type: "Airport Building Set",
+          model: "Airport Complete Set",
+          age: "8+",
+        },
+
+        bus: {
+          image: "../assets/images/lego3.png",
+          name: "Swan Airways Airport Bus",
+          price: "$25.00",
+          description:
+            "A detailed Swan Airways airport bus designed to complete your airport collection.",
+          description2:
+            "A great addition to your airport display and aviation collection.",
+          brand: "Swan Airways",
+          type: "Airport Vehicle",
+          model: "Airport Bus",
+          age: "8+",
+        },
+
+        dc9: {
+          image: "../assets/images/lego 4.png",
+          name: "Swan Airways DC-9",
+          price: "$79.00",
+          description:
+            "A detailed Swan Airways DC-9 aircraft model made for aviation enthusiasts and collectors.",
+          description2:
+            "Display this classic aircraft model as part of your Swan Airways collection.",
+          brand: "Swan Airways",
+          type: "Aircraft Building Set",
+          model: "DC-9",
+          age: "8+",
+        },
+
+        h135: {
+          image: "../assets/images/lego 5.png",
+          name: "Swan Airways Airbus H135",
+          price: "$59.00",
+          description:
+            "A detailed Airbus H135 model featuring the Swan Airways design.",
+          description2:
+            "Perfect for collectors and aviation fans who love helicopters.",
+          brand: "Swan Airways",
+          type: "Helicopter Building Set",
+          model: "Airbus H135",
+          age: "8+",
+        },
+
+        atr: {
+          image: "../assets/images/lego6.png",
+          name: "Swan Airways ATR 72-600",
+          price: "$69.00",
+          description:
+            "Build your own Swan Airways ATR 72-600 with this detailed aircraft model.",
+          description2:
+            "A great collectible for regional aviation enthusiasts.",
+          brand: "Swan Airways",
+          type: "Aircraft Building Set",
+          model: "ATR 72-600",
+          age: "8+",
+        },
+
+        polo: {
+          image: "../assets/images/s7.png",
+          name: "Swan Airways Premium Polo",
+          price: "$29.00",
+          description:
+            "A premium Swan Airways polo shirt designed with a clean and elegant airline-inspired style.",
+          description2:
+            "Perfect for travel, casual wear, or Swan Airways fans.",
+          brand: "Swan Airways",
+          type: "Apparel",
+          model: "Premium Polo",
+          age: "All ages",
+        },
+
+        chino: {
+          image: "../assets/images/t.png",
+          name: "Swan Airways Premium Chino Pants",
+          price: "$39.90",
+          description:
+            "Comfortable and stylish Swan Airways premium chino pants.",
+          description2: "Designed for a smart casual look and everyday travel.",
+          brand: "Swan Airways",
+          type: "Apparel",
+          model: "Premium Chino Pants",
+          age: "All ages",
+        },
+
+        backpack: {
+          image: "../assets/images/b.png",
+          name: "Swan Airways Premium Backpack",
+          price: "$49.90",
+          description:
+            "A practical Swan Airways premium backpack designed for travel and everyday use.",
+          description2:
+            "Carry your essentials comfortably while showing your Swan Airways style.",
+          brand: "Swan Airways",
+          type: "Travel Accessory",
+          model: "Premium Backpack",
+          age: "All ages",
+        },
+      };
+
+      /* =========================
+         GET PRODUCT FROM URL
+      ========================= */
+
+      const params = new URLSearchParams(window.location.search);
+
+      const productKey = params.get("product");
+
+      const product = products[productKey];
+
+      /* =========================
+         DISPLAY PRODUCT
+      ========================= */
+
+      if (product) {
+        document.getElementById("product-image").src = product.image;
+
+        document.getElementById("product-image").alt = product.name;
+
+        document.getElementById("product-name").textContent = product.name;
+
+        document.getElementById("product-price").textContent = product.price;
+
+        document.getElementById("product-description").textContent =
+          product.description;
+
+        document.getElementById("product-description-2").textContent =
+          product.description2;
+
+        document.getElementById("product-brand").textContent = product.brand;
+
+        document.getElementById("product-type").textContent = product.type;
+
+        document.getElementById("product-model").textContent = product.model;
+
+        document.getElementById("product-age").textContent = product.age;
+
+        document.title = product.name;
+      }
+    </script>
+  </body>
+</html>
