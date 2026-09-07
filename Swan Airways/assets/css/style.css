@@ -1,0 +1,698 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background: white;
+   color: #142b43;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+   width: 1024px;
+   margin: auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+#header {
+   background-color: white;
+   padding: 20px 0;
+   position: relative;
+   z-index: 99;
+}
+
+#header .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+   width: 220px;
+   height: auto;
+   position: relative;
+   left: -100px;
+}
+
+
+/* NAV */
+
+.nav-bar {
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+
+   gap: 6px;
+}
+
+.nav-bar a {
+   position: relative;
+
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+
+   padding: 0 16px;
+
+   color: #142b43;
+
+   text-decoration: none;
+
+   font-family: "Marcellus", serif;
+
+   font-size: 15px;
+
+   white-space: nowrap;
+
+   transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+}
+
+.nav-bar a::after {
+   content: "";
+
+   position: absolute;
+
+   left: 16px;
+   right: 16px;
+   bottom: 0px;
+
+   height: 2px;
+
+   background-color: #FFC709;
+
+   transform: scaleX(0);
+
+   transform-origin: center;
+
+   transition: transform 0.3s ease;
+}
+
+.nav-bar a:hover {
+   color: #9c7610;
+
+   transform: translateY(-1px);
+}
+
+.nav-bar a:hover::after {
+   transform: scaleX(1);
+}
+
+
+/* =====================================================
+   BOOKING
+===================================================== */
+
+#main {
+   min-height: 650px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   padding: 20px 0;
+
+   background-image: url(../images/hpdd.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   background-color: rgb(240, 245, 250);
+}
+
+
+/* FORM */
+
+#Booking-form {
+   width: 350px;
+
+   background-color: rgb(246, 247, 249);
+
+   border: 1px solid rgba(255, 255, 255, 0.7);
+   border-radius: 12px;
+
+   color: rgb(15, 50, 96);
+
+   padding: 50px 30px;
+
+   position: relative;
+   left: 350px;
+
+   box-shadow:
+      0 8px 25px rgba(15, 50, 96, 0.22);
+}
+
+
+/* TITLE */
+
+#Booking-form h2 {
+   text-align: center;
+
+   margin-bottom: 40px;
+
+   color: rgba(22, 68, 129, 0.92);
+
+   font-size: 30px;
+}
+
+
+/* INPUT GROUP */
+
+.input-groupb {
+   display: flex;
+   flex-direction: column;
+
+   gap: 4px;
+
+   margin-bottom: 15px;
+}
+
+
+/* LABEL */
+
+.input-groupb label {
+   color: rgb(24, 63, 112);
+
+   font-size: 15px;
+
+   font-weight: 500;
+
+   margin-bottom: 3px;
+}
+
+
+/* INPUT */
+
+.input-groupb input {
+   height: 35px;
+
+   background-color: white;
+
+   border-radius: 3px;
+
+   border: 1px solid rgb(190, 200, 215);
+
+   color: rgb(15, 50, 96);
+
+   padding: 5px 10px;
+}
+
+.input-groupb input::placeholder {
+   color: #aaa;
+}
+
+.input-groupb input:focus {
+   outline: solid 2px rgb(130, 165, 205);
+
+   border-color: rgb(130, 165, 205);
+}
+
+
+/* RETURN ICON */
+
+.flight-return {
+   display: inline-block;
+   transform: scaleX(-1);
+}
+
+
+/* BOOKING BUTTON */
+
+.Booking-btn {
+   width: 100%;
+
+   background-color: rgb(255, 202, 70);
+
+   color: rgb(15, 50, 96);
+
+   border: none;
+
+   border-radius: 6px;
+
+   padding: 11px 20px;
+
+   margin-top: 8px;
+
+   font-size: 16px;
+
+   font-weight: 600;
+
+   cursor: pointer;
+
+   box-shadow:
+      0 3px 8px rgba(15, 50, 96, 0.15);
+
+   transition: 0.3s;
+}
+
+.Booking-btn:hover {
+   background-color: rgb(245, 185, 45);
+
+   transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+#hero-section {
+   padding: 60px 0;
+
+   background-color: white;
+}
+
+#hero-section .container {
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+
+   flex-direction: column;
+
+   gap: 20px;
+
+   text-align: center;
+}
+
+.hero-heading {
+   font-family: "Marcellus", serif;
+
+   font-size: 45px;
+
+   font-weight: normal;
+
+   color: #142b43;
+}
+
+.hero-desc {
+   width: 550px;
+
+   font-size: 18px;
+
+   line-height: 1.7;
+
+   font-family: "Open Sans", sans-serif;
+
+   color: #777;
+
+   text-align: center;
+}
+
+
+/* =====================================================
+   PHẦN 2 - 3 CARD
+===================================================== */
+
+.features {
+   width: 1100px;
+
+   margin: 60px auto 80px;
+   /* chỉnh khung cho khớp */
+
+   display: flex;
+
+   justify-content: center;
+
+   align-items: stretch;
+
+   gap: 30px;
+}
+
+
+/* CARD */
+
+.featcard {
+   width: 33.333%;
+
+   display: flex;
+
+   flex-direction: column;
+
+   background-color: white;
+
+   border-radius: 8px;
+
+   overflow: hidden;
+
+   box-shadow:
+      0 5px 20px rgba(0, 0, 0, 0.10);
+
+   transition: 0.3s;
+}
+
+.featcard img {
+   width: 100%;
+   height: 230px;
+   object-fit: cover;
+   object-position: center top;
+   display: block;
+}
+
+
+/* CARD HOVER */
+
+.featcard:hover {
+   transform: translateY(-6px);
+   /* khi để chuột vô nó sẽ có hiệu ứng lên xuống. */
+
+   box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.17);
+}
+
+
+/* CARD CONTENT */
+
+.featcard-content {
+   padding: 25px 20px 30px;
+
+   text-align: center;
+
+   flex: 1;
+}
+
+
+/* CARD TITLE */
+
+.featcard-content h3 {
+   font-family: "Marcellus", serif;
+
+   font-size: 22px;
+
+   font-weight: normal;
+
+   line-height: 1.4;
+
+   color: #142b43;
+
+   margin-bottom: 15px;
+}
+
+
+/* CARD TEXT */
+
+.featcard-content p {
+   font-size: 15px;
+
+   line-height: 1.8;
+
+   color: #777;
+
+   font-family: "Open Sans", sans-serif;
+}
+
+
+/* =====================================================
+   COFFEE PRODUCTS
+===================================================== */
+
+.coffee-products {
+   width: 100%;
+
+   height: 380px;
+
+   background-image:
+      url(../images/Rd1.png);
+
+   background-size: cover;
+
+   background-position: center;
+
+   display: flex;
+
+   justify-content: center;
+
+   align-items: center;
+
+   text-align: center;
+}
+
+.coffee-products-content {
+   color: white;
+}
+
+.coffee-products h2 {
+   font-family: "Marcellus", serif;
+
+   font-size: 30px;
+
+   font-weight: normal;
+
+   margin-bottom: 20px;
+}
+
+.coffee-products img {
+   max-width: 100%;
+
+   margin-bottom: 15px;
+}
+
+.coffee-products p {
+   width: 450px;
+
+   font-size: 13px;
+
+   font-family: "Open Sans", sans-serif;
+
+   line-height: 1.6;
+
+   margin: 0 auto 25px;
+}
+
+.coffee-products button {
+   padding: 10px 25px;
+
+   background: transparent;
+
+   color: white;
+
+   border: 1px solid white;
+
+   cursor: pointer;
+
+   transition: 0.3s;
+}
+
+.coffee-products button:hover {
+   background-color: white;
+
+   color: #142b43;
+}
+
+
+/* =====================================================
+   COFFEE BLOG
+===================================================== */
+
+.coffee-blog {
+   width: 100%;
+
+   padding: 80px 0;
+
+   background: white;
+}
+
+
+/* BLOG TITLE */
+
+.blog-Lorem {
+   text-align: center;
+}
+
+.blog-Lorem h2 {
+   font-family: "Marcellus", serif;
+
+   font-size: 45px;
+
+   font-weight: normal;
+
+   color: #142b43;
+
+   margin-bottom: 20px;
+}
+
+.blog-Lorem img {
+   margin-bottom: 15px;
+}
+
+.blog-Lorem p {
+   width: 600px;
+
+   margin: auto;
+
+   color: #777;
+
+   font-size: 16px;
+
+   line-height: 1.6;
+
+   font-family: "Open Sans", sans-serif;
+}
+
+
+/* =====================================================
+   RECOMMENDED DESTINATION CARDS
+===================================================== */
+
+.blog-list {
+   width: 1100px;
+   margin: 60px auto 80px;
+
+   display: flex;
+   gap: 30px;
+
+   align-items: stretch;
+}
+
+.blog-card {
+   width: 33.333%;
+
+   display: flex;
+   flex-direction: column;
+
+   background-color: #fff;
+
+   border-radius: 8px;
+   overflow: hidden;
+
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+   transition: 0.3s;
+}
+
+.blog-card:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.17);
+}
+
+.blog-card img {
+   width: 100%;
+   height: 230px;
+
+   object-fit: cover;
+   object-position: center;
+
+   display: block;
+}
+
+.blog-card-content {
+   padding: 25px 20px 30px;
+
+   text-align: center;
+
+   flex: 1;
+}
+
+.blog-card-content h3 {
+   font-family: "Marcellus", serif;
+
+   font-size: 22px;
+   font-weight: normal;
+   line-height: 1.4;
+
+   color: #142b43;
+
+   margin-bottom: 15px;
+}
+
+.blog-card-content p {
+   font-family: "Open Sans", sans-serif;
+
+   font-size: 15px;
+   line-height: 1.8;
+
+   color: #777;
+
+   margin: 0;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+#footer {
+   background-image:
+      url(../images/ft.png);
+
+   background-size: cover;
+
+   background-position: center;
+
+   color: white;
+
+   text-align: center;
+
+   padding: 60px 0;
+}
+
+#footer img {
+   width: 300px;
+
+   margin-bottom: 20px;
+}
+
+#footer p {
+   width: 600px;
+
+   margin: 20px auto;
+
+   line-height: 1.6;
+}
+
+#footer h3 {
+   margin-top: 35px;
+
+   font-family: "Marcellus", serif;
+}
+
+#footer .input-group {
+   width: 376px;
+
+   margin: 20px auto 0;
+}
+
+#footer .input-group label {
+   display: none;
+}
+
+#footer input {
+   width: 100%;
+
+   padding: 12px;
+
+   background: none;
+
+   border: 1px solid white;
+
+   color: white;
+}
+
+#footer input::placeholder {
+   color: rgba(255, 255, 255, 0.7);
+}
